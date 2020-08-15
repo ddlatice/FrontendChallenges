@@ -1,0 +1,38 @@
+.socials {
+  visibility: hidden;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $dark-grayish-blue;
+    display: flex;
+    border-radius: 10px;
+    color: #fff;
+  }
+
+  ul:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 25px solid transparent;
+    border-top-color: $dark-grayish-blue;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -10px;
+    margin-bottom: -10px;
+  }
+
+  li {
+    margin: 5px;
+    padding: 10px;
+  }
+  .popup {
+    position: absolute;
+    bottom: 120px;
+    right: -60px;
+  }
+}
